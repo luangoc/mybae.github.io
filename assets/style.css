@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clear{
+    clear: both;
+}
+#slider{
+    background: url(./img/heart2.jpg) center center / cover no-repeat;
+    padding: 5% 0;
+}
+.content{
+    color: #fff
+
+}
+.header-text{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+    padding: 24px 0;
+    margin-bottom: 50px;
+}
+.slider-content{
+    text-align: center;
+}
+
+.member-img{
+    display: block;
+    float: left;
+    width: 33.3333333%;
+}
+.member-img img{
+    width: 300px;
+    height: 400px;
+    border-radius:20px;
+}
+.member-img img:hover{
+    opacity: 0.8;
+}
+.member-img p{
+    font-weight: 500;
+    padding: 15px;
+    font-size: 30px;
+}
+#slider .message{
+    text-align: center;
+    background-color: cyan;
+    width: 175px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#slider .message:hover{
+    background-color: hotpink;
+    cursor: pointer;
+}
+/* Modal */
+.modal.open{
+    display: flex;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-section{
+    width: 800px;
+    min-height: calc(100% -32px);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #fff;
+    background: rgb(51, 222, 245);
+    border-radius: 20px;
+    animation: modalFadeIn ease 0.4s;
+}
+.modal-slider{
+    background: url(./img/nhan-doi-3.png) center center / cover no-repeat;
+    height: 450px;
+    padding-top: 405px;
+    border-radius: 20px;
+}
+.modal-slider-text{
+    text-align: center;
+}
+.modal-slider img{
+    width: 800px;
+    display: block;
+    text-align: center;
+}
+.modal-text{
+    padding: 16px;
+}
+.modal-text-header{
+    text-align: center;
+}
+.modal-text .description{
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: justify;
+}
+.icon{
+    color: tomato;
+
+}
+.modal-close{
+    text-align: center;
+    margin-top: 16px;
+    width: 100px;
+    background-color: pink;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+.modal-close:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

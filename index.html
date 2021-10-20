@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For my love</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="slider" class="content">
+        <h1 class="header-text">For my Princesse</h1>
+        <div class="slider-content">
+            <div class="member-img">
+                <img src="./assets/img/ngoc1.jpeg" alt="Em iu">
+                <p>Dễ thưn</p>
+            </div>
+
+            <div class="member-img">
+                <img src="./assets/img/ngoc3.jpg" alt="Vợ iu">
+                <p>Yêu em gấc nhìu</p>
+            </div>
+
+            <div class="member-img">
+                <img src="./assets/img/ngoc2.jpeg" alt="Em bé">
+                <p>Đáng iu</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <button class="message js-open-modal">Đôi lời mún nói</button>
+    </div>
+
+    <div class="modal js-modal">
+
+    <div class="modal-section">
+        <div class="modal-slider">
+            <h2 class="modal-slider-text">Cố gắng sau này có tất cả có cả chúng ta</h2>
+        </div>
+        <div class="modal-text">
+            <h3 class="modal-text-header">Gửi em yêu!</h3>
+            <p class="description">
+                Anh yêu em rất nhiều, nhiều hơn tất cả những gì anh có.
+                Anh biết em đã lâu, yêu em hơn một năm nay và cuộc sống của anh gắn liền với em từ đó. 
+                Chúng ta đã trải qua rất nhiều điều để ngày hôm nay được có nhau.
+                Anh cảm thấy may mắn khi được yêu em và được em yêu, nên anh rất trân trọng điều đó.
+                Vậy nên chúng mình phải cố gắng nhé.
+                Mặc dù anh đã nói rất nhiều lần rồi nhưng anh vẫn muốn nói lại rằng anh sẽ luôn ở đây chia sẻ cùng em cho dù có bất cứ chuyện gì xảy ra.
+                Vậy nên có buồn gì nói anh chứ không được giữ trong lòng một mình đâu nha.
+                Yêu thương em bé rất nhiều <i class="icon ti-heart"></i>
+            </p>
+            <div class="modal-close js-close-modal">Yêu anh</div>
+        </div>
+        
+    </div>
+    </div>
+    <script>
+        const showmodal = document.querySelector('.js-open-modal')
+        const modal = document.querySelector('.js-modal')
+        const closemodal = document.querySelector('.js-close-modal')
+
+        function showModal(){
+            modal.classList.add('open')
+        }
+        function closeModal(){
+            modal.classList.remove('open')
+        }
+
+        showmodal.addEventListener('click', showModal)
+        closemodal. addEventListener('click', closeModal)
+    </script>
+</body>
+
+</html>
